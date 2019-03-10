@@ -26,5 +26,8 @@
     "require": [
       "ts-node/register"
     ]
+  },
+  "dependencies": {
+    "fast-deep-equal": "^2.0.1"
   }
 }
