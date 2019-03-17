@@ -21,9 +21,9 @@ test
 test
 ( `divide works properly`
 , (t) => {
-    t.is(divide (6) (2), 3)
-    t.is(divide (1) (5), 0.2)
-    t.is(divide (42) (0), Infinity)
-    t.is(divide (42) (-0), -Infinity)
+    t.is(divide (2) (6), 3)
+    t.is(divide (5) (1), 0.2)
+    t.is(divide (0) (42), Infinity)
+    t.is(divide (-0) (42), -Infinity)
   }
 )
