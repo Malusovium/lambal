@@ -21,6 +21,5 @@ test
     t.deepEqual(drop (-3) ([ 0, 1, 2, 3 ]), [ 0 ])
     t.deepEqual(drop (0) ([ 0, 1, 2 ]), [ 0, 1, 2 ])
     t.deepEqual(drop (-0) ([ 0, 1, 2 ]), [ 0, 1, 2 ])
-
   }
 )
