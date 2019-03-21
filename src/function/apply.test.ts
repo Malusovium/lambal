@@ -10,7 +10,7 @@ test
 )
 
 test
-( `apply return's a function`
+( 'apply returns a function'
   , (t) => {
     const applyReturnType = typeof apply ( () => {} )
     t.is(applyReturnType, 'function')

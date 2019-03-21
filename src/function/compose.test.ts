@@ -11,7 +11,7 @@ test
 )
 
 test
-( `compose return's a function`
+( 'compose returns a function'
 , (t) => {
     const composeReturnType = typeof compose ( () => {} )
     t.is(composeReturnType, 'function')
@@ -19,7 +19,7 @@ test
 )
 
 test
-( `compose return's return's a function`
+( 'compose returns returns a function'
 , (t) => {
     const composeReturnReturnType = typeof compose ( (b: string) => null ) ( (a: number) => '' )
     t.is(composeReturnReturnType, 'function')

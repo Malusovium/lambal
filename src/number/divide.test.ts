@@ -11,7 +11,7 @@ test
 )
 
 test
-( `divide return's a function`
+( 'divide returns a function'
 , (t) => {
     const divideReturnType = typeof divide (10)
     t.is(divideReturnType, 'function')
@@ -19,7 +19,7 @@ test
 )
 
 test
-( `divide works properly`
+( 'divide works properly'
 , (t) => {
     t.is(divide (2) (6), 3)
     t.is(divide (5) (1), 0.2)

@@ -11,7 +11,7 @@ test
 )
 
 test
-( `psi return's a function`
+( 'psi returns a function'
 , (t) => {
     const psiReturnType = typeof psi ((b1: null) => (b2: null) => null)
     t.is(psiReturnType, 'function')
@@ -19,7 +19,7 @@ test
 )
 
 test
-( `psi return's return's a function`
+( 'psi returns returns a function'
 , (t) => {
     const psiReturnReturnType =
       typeof psi
@@ -30,7 +30,7 @@ test
 )
 
 test
-( `psi return's return's return's a function`
+( 'psi returns returns returns a function'
 , (t) => {
     const psiReturnReturnReturnType =
       typeof psi

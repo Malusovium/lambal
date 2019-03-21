@@ -11,7 +11,7 @@ test
 )
 
 test
-( `complement return's a function`
+( 'complement returns a function'
 , (t) => {
     const complementReturnType = typeof complement (() => false)
     t.is(complementReturnType, 'function')
@@ -19,7 +19,7 @@ test
 )
 
 test
-( `complement return's return's a boolean`
+( 'complement returns returns a boolean'
 , (t) => {
     const complementReturnReturnType = typeof (() => false) ()
     t.is(complementReturnReturnType, 'boolean')
@@ -27,7 +27,7 @@ test
 )
 
 test
-( `complement works properly`
+( 'complement works properly'
 , (t) => {
     const alwayTrue = () => true
     const alwaysFalse = () => false

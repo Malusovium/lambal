@@ -11,7 +11,7 @@ test
 )
 
 test
-( `prefix return's a function`
+( 'prefix returns a function'
 , (t) => {
     const suffixReturnType = typeof suffix ('to')
     t.is(suffixReturnType, 'function')

@@ -12,7 +12,7 @@ test
 )
 
 test
-( `flip return's a function`
+( 'flip returns a function'
 , (t) => {
     const flipReturnType = typeof flip ( (a: null) => (b: null) => null )
 
@@ -21,7 +21,7 @@ test
 )
 
 test
-( `flip return's return's a function`
+( 'flip returns returns a function'
 , (t) => {
     const flipReturnReturnType = typeof flip ( (a: null) => (b: null) => null ) (null)
 
@@ -30,7 +30,7 @@ test
 )
 
 test
-( `properly flips "A" and "B"`
+( 'properly flips "A" and "B"'
 , (t) => {
     const substract = (a: number) => (b: number) => a - b
     const flippedSubstract = flip (substract)

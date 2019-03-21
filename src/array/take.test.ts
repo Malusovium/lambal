@@ -11,7 +11,7 @@ test
 )
 
 test
-( `take return's a function`
+( 'take returns a function'
 , (t) => {
     const takeReturnType = typeof take (0)
     t.is(takeReturnType, 'function')

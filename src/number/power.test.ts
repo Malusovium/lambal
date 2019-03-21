@@ -11,7 +11,7 @@ test
 )
 
 test
-( `power return's a function`
+( 'power returns a function'
 , (t) => {
     const powerReturnType = typeof power (10)
     t.is(powerReturnType, 'function')

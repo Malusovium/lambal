@@ -11,7 +11,7 @@ test
 )
 
 test
-( `not return's a boolean`
+( 'not returns a boolean'
 , (t) => {
     const notReturnType = typeof not (false)
     t.is(notReturnType, 'boolean')

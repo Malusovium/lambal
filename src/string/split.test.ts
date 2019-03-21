@@ -11,7 +11,7 @@ test
 )
 
 test
-( `split return's a function`
+( 'split returns a function'
 , (t) => {
     const splitReturnType = typeof split ('')
     t.is(splitReturnType, 'function')

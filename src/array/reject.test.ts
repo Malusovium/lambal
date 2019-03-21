@@ -11,7 +11,7 @@ test
 )
 
 test
-( `filter return's a function`
+( 'filter returns a function'
 , (t) => {
     const rejectReturnType = typeof reject ((a: null) => false)
     t.is(rejectReturnType, 'function')

@@ -11,7 +11,7 @@ test
 )
 
 test
-( `add return's a function`
+( 'add returns a function'
 , (t) => {
     const addReturnType = typeof add (0)
     t.is(addReturnType, 'function')
