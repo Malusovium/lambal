@@ -11,7 +11,7 @@ test
 )
 
 test
-( 'constant return type is a function'
+( 'constant returns a function'
   , (t) => {
     const constantReturnType = typeof constant (null)
     t.is(constantReturnType, 'function')

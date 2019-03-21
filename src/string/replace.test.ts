@@ -11,7 +11,7 @@ test
 )
 
 test
-( `replace return's a function`
+( 'replace returns a function'
 , (t) => {
     const replaceReturnType = typeof replace ('')
     t.is(replaceReturnType, 'function')
@@ -19,7 +19,7 @@ test
 )
 
 test
-( `replace return's return's a function`
+( 'replace returns returns a function'
 , (t) => {
     const replaceReturnReturnType = typeof replace ('') ('')
     t.is(replaceReturnReturnType, 'function')

@@ -11,7 +11,7 @@ test
 )
 
 test
-( `substract return's a function`
+( 'substract returns a function'
 , (t) => {
     const substractReturnType = typeof substract (10)
     t.is(substractReturnType, 'function')

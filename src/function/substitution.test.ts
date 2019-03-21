@@ -11,7 +11,7 @@ test
 )
 
 test
-( `substitution return's a function`
+( 'substitution returns a function'
 , (t) => {
     const substitutionReturnType =
       typeof substitution ( (a: null) => (b: null) => null)
@@ -20,7 +20,7 @@ test
 )
 
 test
-( `substitution return's return's a function`
+( 'substitution returns returns a function'
 , (t) => {
     const substitutionReturnReturnType =
       typeof substitution ( (a: null) => (b: null) => null ) ( (a:null) => null )
@@ -29,7 +29,7 @@ test
 )
 
 test
-( `substitution works properly`
+( 'substitution works properly'
 , (t) => {
     const showFormula = (x: number) => (y: number) => `f(${x}) = ${y}`
     const fDouble = (x:number) => x * 2

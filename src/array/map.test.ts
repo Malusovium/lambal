@@ -11,7 +11,7 @@ test
 )
 
 test
-( `map return's a function`
+( 'map returns a function'
 , (t) => {
     const mapReturnType = typeof map ((a: null) => null)
     t.is(mapReturnType, 'function')

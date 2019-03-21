@@ -12,7 +12,7 @@ test
 )
 
 test
-( `xor return's a function`
+( 'xor returns a function'
 , (t) => {
     const xorReturnType = typeof xor (true)
 
@@ -21,7 +21,7 @@ test
 )
 
 test
-( `xor return's return's a boolean`
+( 'xor returns returns a boolean'
 , (t) => {
     const xorReturnReturnType = typeof xor (true) (false)
 
@@ -30,7 +30,7 @@ test
 )
 
 test
-( `xor works properly`
+( 'xor works properly'
 , (t) => {
     const xorFF = xor (false) (false)
     const xorFT = xor (false) (true)

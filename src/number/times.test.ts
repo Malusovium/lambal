@@ -11,7 +11,7 @@ test
 )
 
 test
-( `times return's a function`
+( 'times returns a function'
 , (t) => {
     const timesReturnType = typeof times (5)
     t.is(timesReturnType, 'function')

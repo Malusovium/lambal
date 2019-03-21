@@ -11,7 +11,7 @@ test
 )
 
 test
-( `and return's a function`
+( 'and returns a function'
 , (t) => {
     const andReturnType = typeof and (false)
     t.is(andReturnType, 'function')
@@ -19,7 +19,7 @@ test
 )
 
 test
-( `and return's return's type is a boolean`
+( 'and returns returns type is a boolean'
 , (t) => {
     const andReturnReturnType = typeof and (false) (true)
     t.is(andReturnReturnType, 'boolean')

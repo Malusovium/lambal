@@ -11,7 +11,7 @@ test
 )
 
 test
-( `reduce return's a function`
+( 'reduce returns a function'
 , (t) => {
     const reduceReturnType = typeof reduce ((acc:null, curr: null) => null)
     t.is(reduceReturnType, 'function')
@@ -19,7 +19,7 @@ test
 )
 
 test
-( `reduce return's return's a function`
+( 'reduce returns returns a function'
 , (t) => {
     const reduceReturnReturnType =
       typeof reduce

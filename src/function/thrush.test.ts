@@ -11,7 +11,7 @@ test
 )
 
 test
-( `thrush return's a function`
+( 'thrush returns a function'
 , (t) => {
     const thrushReturnType = typeof thrush
     t.is(thrushReturnType, 'function')

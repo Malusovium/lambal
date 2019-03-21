@@ -12,7 +12,7 @@ test
 )
 
 test
-( `f return's a boolean`
+( 'f returns a boolean'
 , (t) => {
     const fReturnType = typeof f (null)
 
@@ -21,7 +21,7 @@ test
 )
 
 test
-( `f return's false`
+( 'f returns false'
 , (t) => {
     const fReturn = f (null)
 

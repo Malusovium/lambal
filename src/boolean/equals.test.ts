@@ -11,7 +11,7 @@ test
 )
 
 test
-( `equals return's a function`
+( 'equals returns a function'
 , (t) => {
     const equalsReturnType = typeof equals (null)
     t.is(equalsReturnType, 'function')

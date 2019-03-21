@@ -11,7 +11,7 @@ test
 )
 
 test
-( `isOfType return's function`
+( 'isOfType returns function'
 , (t) => {
     const isOfTypeReturnType = typeof isOfType ('null')
     t.is(isOfTypeReturnType, 'function')

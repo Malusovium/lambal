@@ -11,7 +11,7 @@ test
 )
 
 test
-( `prefix return's a function`
+( 'prefix returns a function'
 , (t) => {
     const prefixReturnType = typeof prefix ('to')
     t.is(prefixReturnType, 'function')

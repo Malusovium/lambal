@@ -11,7 +11,7 @@ test
 )
 
 test
-( `or return's a function`
+( 'or returns a function'
 , (t) => {
     const orReturnType = typeof or (false)
     t.is(orReturnType, 'function')
@@ -19,7 +19,7 @@ test
 )
 
 test
-( `or return's return's a boolean`
+( 'or returns returns a boolean'
 , (t) => {
     const orReturnReturnType = typeof or (false) (true)
     t.is(orReturnReturnType, 'boolean')
