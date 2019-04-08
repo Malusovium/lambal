@@ -1,4 +1,5 @@
 import * as A from './array'
+import * as F from './function'
 import * as O from './object'
 import * as N from './number'
 import * as B from './boolean'
