@@ -1,6 +1,19 @@
-type TestAdd = (x: number) => (y: number) => number
-const testAdd: TestAdd = (x) => (y) => x + y
+import * as A from './array'
+import * as O from './object'
+import * as N from './number'
+import * as B from './boolean'
+import * as S from './string'
+import
+{ IsKeyOf
+, Function
+} from './types'
 
 export
-{ testAdd
+{ Function
+, IsKeyOf
+, A
+, O
+, N
+, B
+, S
 }
