@@ -12,6 +12,7 @@ import
 export
 { Function
 , IsKeyOf
+, F
 , A
 , O
 , N
