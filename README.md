@@ -31,7 +31,7 @@ import
 // O -> Object
 
 // e.g.
-const add10 = N.add(10)
+const add10 = N.add (10)
 const add20 = F.compose (add10) (add10)
 
 ```
