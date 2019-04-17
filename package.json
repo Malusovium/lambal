@@ -7,6 +7,7 @@
   "scripts": {
     "build": "parcel build ./src/index.ts --out-dir=lib --target=node",
     "build:doc": "typedoc --out docs --exclude **/*.test.ts src",
+    "tsc": "tsc",
     "test": "ava src/**/*.test.ts",
     "test:watch": "ava -w src/**/*.test.ts",
     "prepare": "npm run build && npm run build:doc",
@@ -19,7 +20,7 @@
     "parcel-bundler": "^1.12.3",
     "ts-node": "^8.0.3",
     "typedoc": "^0.14.2",
-    "typescript": "^3.3.3333"
+    "typescript": "^3.4.3"
   },
   "ava": {
     "compileEnhancements": false,
