@@ -6,13 +6,13 @@ const props: Props =
     (obj) =>
       keys
         .reduce
-        ( (acc: any, curr: any) =>
-          obj[<IsKeyOf<typeof curr, typeof obj>>curr] === undefined
-            ? acc
-            : { ...acc, [curr]: obj[<IsKeyOf<typeof curr, typeof obj>>curr]
-              }
-        , <any>{}
-        ) as typeof obj[IsKeyOf<typeof keys, typeof obj>]
+         ( (acc: any, curr: any) =>
+           (obj as any)[<any>curr] === undefined
+             ? acc
+             : { ...acc, [curr]: (obj as any)[<IsKeyOf<typeof curr, typeof obj>>curr]
+               }
+         , <any>{}
+         ) as typeof obj[IsKeyOf<typeof keys, typeof obj>]
 
 export
 { props
