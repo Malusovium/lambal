@@ -6,7 +6,7 @@
   "types": "src/index.ts",
   "scripts": {
     "build": "parcel build ./src/index.ts --out-dir=lib --target=node",
-    "build:doc": "typedoc --out docs --exclude **/*.test.ts src",
+    "build:doc": "typedoc --out docs --exclude **/*.test.ts src && cp _config.yml docs/.",
     "tsc": "tsc",
     "test": "ava src/**/*.test.ts",
     "test:watch": "ava -w src/**/*.test.ts",
