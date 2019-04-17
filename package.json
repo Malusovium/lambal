@@ -10,7 +10,7 @@
     "test": "ava src/**/*.test.ts",
     "test:watch": "ava -w src/**/*.test.ts",
     "prepare": "npm run build && npm run build:doc",
-    "postversion": "git push && gist push --tags"
+    "postversion": "git push && git push --tags"
   },
   "author": "Michiel Kamphuis <mfk@kamphuis.eu>",
   "license": "MIT",
