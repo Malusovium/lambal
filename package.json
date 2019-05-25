@@ -1,6 +1,6 @@
 {
   "name": "lambal",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "description": "A pragmatic utility library to spice up your functional style code.",
   "main": "lib/index.js",
   "types": "src/index.ts",
@@ -10,7 +10,8 @@
     "tsc": "tsc",
     "test": "ava src/**/*.test.ts",
     "test:watch": "ava -w src/**/*.test.ts",
-    "prepare": "npm run build && npm run build:doc",
+    "prepare": "npm run build",
+    "preversion": "npm run build:doc",
     "postversion": "git push && git push --tags"
   },
   "author": "Michiel Kamphuis <mfk@kamphuis.eu>",
