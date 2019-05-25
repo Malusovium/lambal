@@ -65,8 +65,43 @@
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
 				<h1 id="lambal">Lambal</h1>
-				<p>A simple utility library to spice up your code.
-				With a focus on functional style, without staring in the deep abiss of category theory.</p>
+				<p>A pragmatic utility library to spice up your code.</p>
+				<p>With a focus on functional style code, without staring in the deep abyss of category theory.</p>
+				<h2 id="install">Install</h2>
+				<pre><code class="language-ts">npm i -S lambal</code></pre>
+				<h2 id="usage">Usage</h2>
+				<h3 id="recommended-with-full-usage-">Recommended with full usage!</h3>
+				<pre><code class="language-ts"><span class="hljs-keyword">import</span>
+{ F
+, B
+, S
+, N
+, A
+, O
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'lambal'</span>
+
+<span class="hljs-comment">// Sorted by main funcionality</span>
+<span class="hljs-comment">// F -&gt; Function</span>
+<span class="hljs-comment">// B -&gt; Boolean</span>
+<span class="hljs-comment">// S -&gt; String</span>
+<span class="hljs-comment">// N -&gt; Number</span>
+<span class="hljs-comment">// A -&gt; Array</span>
+<span class="hljs-comment">// O -&gt; Object</span>
+
+<span class="hljs-comment">// e.g.</span>
+<span class="hljs-keyword">const</span> add10 = N.add (<span class="hljs-number">10</span>)
+<span class="hljs-keyword">const</span> add20 = F.compose (add10) (add10)
+</code></pre>
+				<h3 id="when-you-need-only-need-a-couple-of-functions">When you need only need a couple of functions</h3>
+				<pre><code class="language-ts"><span class="hljs-keyword">import</span>
+{ add
+, multiply
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'lambal/number'</span>
+<span class="hljs-keyword">import</span>
+{ compose
+, identity
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'lambal/function'</span>
+</code></pre>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -88,10 +123,16 @@
 						<a href="modules/_array_map_.html">"array/map"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="modules/_array_prefix_.html">"array/prefix"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="modules/_array_reduce_.html">"array/reduce"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_array_reject_.html">"array/reject"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_array_suffix_.html">"array/suffix"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_array_take_.html">"array/take"</a>
