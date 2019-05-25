@@ -6,12 +6,13 @@
   "types": "src/index.ts",
   "scripts": {
     "build": "parcel build ./src/index.ts --out-dir=lib --target=node",
-    "build:doc": "typedoc --out docs --exclude **/*.test.ts src && cp _config.yml docs/.",
+    "docs:build": "typedoc --out docs --exclude **/*.test.ts src && cp _config.yml docs/.",
+    "docs:commit": "git add docs/. && git commit -m \"built documentation\"",
     "tsc": "tsc",
     "test": "ava src/**/*.test.ts",
     "test:watch": "ava -w src/**/*.test.ts",
     "prepare": "npm run build",
-    "preversion": "npm run build:doc",
+    "preversion": "npm run docs:build && npm run docs:commit",
     "postversion": "git push && git push --tags"
   },
   "author": "Michiel Kamphuis <mfk@kamphuis.eu>",
