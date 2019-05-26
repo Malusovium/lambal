@@ -1,6 +1,6 @@
 {
   "name": "lambal",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A pragmatic utility library to spice up your functional style code.",
   "main": "lib/index.js",
   "types": "src/index.ts",
