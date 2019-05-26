@@ -7,6 +7,7 @@ import { identity } from './identity'
 import { psi } from './psi'
 import { substitution } from './substitution'
 import { thrush } from './thrush'
+import { tap } from './tap'
 
 export
 { apply
@@ -18,4 +19,5 @@ export
 , psi
 , substitution
 , thrush
+, tap
 }
