@@ -4,6 +4,8 @@ import { map } from './map'
 import { reduce } from './reduce'
 import { reject } from './reject'
 import { take } from './take'
+import { prefix } from './prefix'
+import { suffix } from './suffix'
 
 export
 { drop
@@ -12,4 +14,6 @@ export
 , reduce
 , reject
 , take
+, prefix
+, suffix
 }
