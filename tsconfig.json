@@ -59,6 +59,7 @@
   },
   "exclude": [
     "**/*.test.ts",
+    "lib",
     "node_modules"
   ]
 }
