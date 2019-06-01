@@ -7,7 +7,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "npm run tsc",
-    "docs:build": "typedoc --out docs --exclude **/*.test.ts src && cp _config.yml docs/.",
+    "docs:build": "typedoc --inlineSourceMap --out docs --exclude **/*.test.ts src && cp _config.yml docs/.",
     "docs:commit": "git add docs/. && git commit -m \"built documentation\"",
     "tsc": "tsc",
     "test": "ava src/**/*.test.ts",
