@@ -1,4 +1,5 @@
 .#*
 .cache
+.*_cache
 node_modules
-lib
+dist
