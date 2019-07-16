@@ -1,6 +1,6 @@
 {
   "name": "lambal",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "A pragmatic utility library to spice up your functional style code.",
   "main": "dist/lambal.js",
   "types": "dist/index.d.ts",
